@@ -3,24 +3,26 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-logo" aria-label="Логотип">
-        <img src="img/logo-htmlacademy.svg" width="154" height="64" alt="Логотип">
+        <img src="img/logo.svg" width="154" height="64" alt="Логотип">
         </a>
         <ul class="menu-navigation-list">
           <li class="menu-navigation-item">
-            <a href="#">Каталог</a>
-            <ul class="catalog-list">
-              <li class="catalog-item"><a href="#">Новинки</a></li>
+            <a class="menu-current">Каталог</a>
+          </li>
+          <ul class="catalog-list">
+              <li class="catalog-item new">Новинки</li>
               <li class="catalog-item"><a class="current-page">Сливочное</a></li>
               <li class="catalog-item"><a href="#">Щербеты</a></li>
               <li class="catalog-item"><a href="#">Фруктовый лед</a></li>
               <li class="catalog-item"><a href="#">Мелорин</a></li>
             </ul>
-          </li>
           <li class="menu-navigation-item"><a href="delivery.html">Доставка и оплата</a></li>
           <li class="menu-navigation-item"><a href="company.html">О компании</a></li>
         </ul>
@@ -33,7 +35,8 @@
           </li>
           <li class="user-navigation-item">
             <a class="user-enter-link" href="#">Вход</a>
-            <div class="user-navigation-block">
+          </li>
+          <div class="user-navigation-block">
               <form class="enter-form" action="https://echo.htmlacademy.ru" method="post">
                 <p class="mail-input">
                   <label class="visually-hidden" for="mail">Электронная почта</label>
@@ -43,15 +46,15 @@
                   <label class="visually-hidden" for="password">Пароль</label>
                   <input type="password" name="enter-form-password" id="password" placeholder="Пароль">
                 </p>
-                <button class="button" type="submit">Войти</button>
-                <a href="#">Забыли пароль?</a><br>
-                <a href="#">Новая регистрация</a>
-            </div>
+                <a class="button" href="#">Войти</a>
+                <a class="enter-link" href="#">Забыли пароль?</a><br>
+                <a class="enter-link" href="#">Новая регистрация</a>
             </form>
-          </li>
+            </div>
           <li class="user-navigation-item" aria-label="Корзина для товаров">
-            2 товара
-            <div class="basket-table">
+            <a class="user-searck-link">2 товара</a>
+          </li>
+          <div class="basket-table">
               <table>
                 <tr>
                   <td><button type="button" aria-label="Удалить товар из корзины">x</button></td>
@@ -66,12 +69,11 @@
                   <td>450 руб.</td>
                 </tr>
               </table>
-              <p>Итого: 750 руб.</p>
+              <p class="basket-sum">Итого: 750 руб.</p>
               <a class="button" href="#">Оформить заказ</a>
             </div>
-          </li>
         </ul>
-        <p>с 10 до 20, ежедневно<br>8 812 450-25-25
+        <p class="navigation-time">с 10 до 20, ежедневно<br><span class="navigation-phone">8 812 450-25-25</span>
         </p>
       </nav>
     </header>
@@ -81,7 +83,7 @@
         <li class="breadcrumbs-item">Каталог</li>
         <li class="breadcrumbs-item">Сливочное</li>
       </ul>
-      <h1 class="maim-title">Сливочное мороженое</h1>
+      <h1 class="main-title">Сливочное мороженое</h1>
       <section class="forms">
         <h2 class="visually-hidden">Формы для фильтров</h2>
         <form class="sort-form" action="https://echo.htmlacademy.ru" method="post">
@@ -149,7 +151,7 @@
       </section>
       <section class="ice-catalog">
         <h2 class="visually-hidden">Каталог мороженого</h2>
-        <ul class="catalog-list">
+        <ul class="ice-list">
           <li class="catalog-item">
             <img src="img/1.png" width="267" height="267" alt="Мороженое">
             <p class="ice-price">310 P<span>/кг</span></p>
@@ -271,7 +273,7 @@
         <li class="link-item"><a href="#">Наши документы</a></li>
         <li class="link-item"><a href="#">Экологические стандарты</a></li>
       </ul>
-      <p>Сделано в HTML Academy 2017</p>
+      <p>Сделано в <a class="academy-link" href="#">HTML Academy</a> 2017</p>
     </footer>
   </body>
 </html>

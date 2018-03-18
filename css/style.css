@@ -1,0 +1,401 @@
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Regular.woff2') format('woff2'),
+        url('Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Bold.woff2') format('woff2'),
+        url('Roboto-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Medium.woff2') format('woff2'),
+        url('Roboto-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    color: #ffffff;
+    font-weight: 400;
+
+    background-color: #849d8f;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.button {
+  background: linear-gradient(#f26843, #e74a35);
+  color: #ffffff;
+  text-decoration: none;
+  box-shadow: 0 2px 2px rgba(56, 29, 26, 0.36);
+
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.button:hover,
+.button:focus {
+  background: linear-gradient(rgba(242, 104, 67, 0.80), rgba(231, 74, 53, 0.80));
+  color: #ffffff;
+  text-decoration: none;
+  box-shadow: 0 2px 2px rgba(56, 29, 26, 0.36);
+}
+
+.button:active {
+  background: linear-gradient(#e74a35, #f26843);
+  color: #ffffff;
+  text-decoration: none;
+  box-shadow: inset 0 2px 2px #40231f;
+}
+
+.menu-navigation-list,
+.user-navigation-list,
+.catalog-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+.menu-navigation-item a {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+.catalog-list {
+  background-color: #f8f7f4;
+}
+
+.catalog-list a {
+  font-size: 14px;
+  line-height: 16px;
+  color: #323232;
+  font-weight: 400;
+}
+
+.new {
+  font-size: 14px;
+  line-height: 16px;
+  color: #323232;
+  font-weight: 700;
+}
+
+.user-navigation-item a {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.search-form,
+.user-navigation-block,
+.basket-table {
+  background-color: #f8f7f4;
+}
+
+.menu-navigation-item a:hover,
+.menu-navigation-item a:focus,
+.user-navigation-item a:hover,
+.user-navigation-item a:focus {
+  background-color: #f7f6f3;
+  color: #000000;
+  text-decoration: none;
+}
+
+.menu-navigation-item a:active,
+.user-navigation-item a:active {
+  background-color: #f7f6f3;
+  color: #000000;
+  text-decoration: none;
+  box-shadow: inset 0 2px 1px #372b1b;
+}
+
+.enter-link {
+  font-size: 13px;
+  line-height: 24px;
+  color: #323232;
+}
+
+.navigation-time {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+}
+
+.navigation-phone {
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.main-slider h2 {
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 700;
+}
+
+.main-slider-button {
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: 700;
+}
+
+.stocks h3 {
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: 700;
+}
+
+.stocks p {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+}
+
+.raspberries-stock {
+  background-color: #590f1b;
+  background-image: url(../img/raspberry.jpg);
+  background-repeat: no-repeat;
+  width: 560px;
+  height: 229px;
+}
+
+.chocolate-stock {
+  background-color: #5f3522;
+  background-image: url(../img/choco.jpg);
+  background-repeat: no-repeat;
+  width: 560px;
+  height: 229px;
+}
+
+.ice-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ice-price {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 700;
+}
+
+.ice-price span {
+  font-size: 30px;
+}
+
+.ice-link {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.ice-link:hover,
+.ice-link:active,
+.ice-link:focus {
+  color: #ffbc9e;
+}
+
+.ice-hover a {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.advantages {
+  background-color: #ece0c4;
+  background-image: url(../img/wafer.jpg);
+  background-repeat: no-repeat;
+  width: 1146px;
+  height: 306px;
+}
+
+.advantages-title {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+  color: #323232;
+}
+
+.advantages-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages-list li {
+  color: #323232;
+}
+
+.news {
+  background-color: #ffffff;
+  background-image: url(../img/strawberry.jpg);
+  background-repeat: no-repeat;
+  width: 560px;
+  height: 220px;
+}
+
+.news-title {
+  font-weight: 500;
+  color: #323232;
+}
+
+.news-text {
+  color: #323232;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.subscription-block {
+  background-color: #f8f7f4;
+  background-image: url(../img/mail.jpg);
+  background-repeat: no-repeat;
+  width: 560px;
+  height: 220px;
+}
+
+.subscription-text {
+  color: #5a5a5a;
+}
+
+.address-block {
+  background-color: #fefefe;
+  color: #323232;
+}
+
+.address-block p {
+  font-weight: 14px;
+  line-height: 20px;
+}
+
+.address-block p span {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.social-list,
+.link-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social-list a,
+.link-list a,
+.academy-link,
+.main-footer p {
+  color: #ffffff;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.link-list a:hover,
+.link-list a:focus,
+.link-list a:active,
+.academy-link:hover,
+.academy-link:focus,
+.academy-link:active {
+  color: #ffbc9e;
+}
+
+.modal {
+  background-color: #f8f7f4;
+}
+
+.modal-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+  color: #323232;
+}
+
+.menu-current {
+  background-color: #d07058;
+}
+
+.menu-current:hover {
+  background-color: #d07058;
+}
+
+.basket-table td {
+  font-size: 13px;
+  line-height: 16px;
+  color: #323232;
+}
+
+.basket-table td span {
+  color: #999999;
+}
+
+.basket-sum {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #323232;
+}
+
+.breadcrumbs-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumbs-list li {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.main-title {
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.sort-form legend {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.sort-form-select option,
+.radio-item label,
+.checkbox-item label {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+.pagination-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pagination-list li {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
