@@ -67,6 +67,18 @@ body {
   box-shadow: inset 0 2px 2px #40231f;
 }
 
+.container {
+  width: 1150px;
+  padding: 0 25px;
+  margin: 0 auto;
+}
+
+.main-navigation {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 .menu-navigation-list,
 .user-navigation-list,
 .catalog-list {
@@ -76,15 +88,30 @@ body {
 
 }
 
+.menu-navigation-list {
+  width: 600px;
+}
+
+.right-navigation {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-navigation-list {
+  width: 270px;
+}
+
+.navigation-time {
+  width: 164px;
+  min-height: 40px;
+  margin-left: auto;
+}
+
 .menu-navigation-item a {
   color: #ffffff;
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
-}
-
-.catalog-list {
-  background-color: #f8f7f4;
 }
 
 .catalog-list a {
@@ -111,8 +138,10 @@ body {
 
 .search-form,
 .user-navigation-block,
-.basket-table {
+.basket-table,
+.catalog-list {
   background-color: #f8f7f4;
+  display: none;
 }
 
 .menu-navigation-item a:hover,
@@ -156,10 +185,21 @@ body {
   font-weight: 700;
 }
 
+.main-slider {
+  display: flex;
+  margin-bottom: 35px;
+}
+
 .main-slider-button {
   font-size: 32px;
   line-height: 44px;
   font-weight: 700;
+}
+
+.stocks {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
 }
 
 .stocks h3 {
@@ -180,6 +220,8 @@ body {
   background-repeat: no-repeat;
   width: 560px;
   height: 229px;
+  padding: 25px 20px;
+  box-sizing: border-box;
 }
 
 .chocolate-stock {
@@ -188,12 +230,33 @@ body {
   background-repeat: no-repeat;
   width: 560px;
   height: 229px;
+  padding: 25px 20px;
+  box-sizing: border-box;
+}
+
+.ice {
+  margin-bottom: 35px;
+}
+
+.ice-catalog {
+  margin-bottom: 35px;
 }
 
 .ice-list {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.ice-item {
+  width: 268px;
+}
+
+.catalog-item {
+  width: 268px;
 }
 
 .ice-price {
@@ -223,12 +286,19 @@ body {
   font-weight: 700;
 }
 
+.ice- {
+  display: flex;
+}
+
 .advantages {
   background-color: #ece0c4;
   background-image: url(../img/wafer.jpg);
   background-repeat: no-repeat;
   width: 1146px;
   height: 306px;
+   padding: 25px 20px;
+  box-sizing: border-box;
+  margin-bottom: 35px;
 }
 
 .advantages-title {
@@ -248,12 +318,20 @@ body {
   color: #323232;
 }
 
+.subscription {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+
 .news {
   background-color: #ffffff;
   background-image: url(../img/strawberry.jpg);
   background-repeat: no-repeat;
   width: 560px;
   height: 220px;
+  padding: 25px 20px;
+  box-sizing: border-box;
 }
 
 .news-title {
@@ -274,10 +352,17 @@ body {
   background-repeat: no-repeat;
   width: 560px;
   height: 220px;
+  padding: 25px 20px;
+  box-sizing: border-box;
 }
 
 .subscription-text {
   color: #5a5a5a;
+}
+
+.address {
+  margin-left: -25px;
+  margin-bottom: 35px;
 }
 
 .address-block {
@@ -294,6 +379,11 @@ body {
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
+}
+
+.main-footer {
+  display: flex;
+  justify-content: space-between;
 }
 
 .social-list,
@@ -319,6 +409,20 @@ body {
 .academy-link:focus,
 .academy-link:active {
   color: #ffbc9e;
+}
+
+.social-list {
+  width: 267px;
+
+}
+
+.link-list {
+  width: 560px;
+
+}
+
+.made-in {
+  width: 267px;
 }
 
 .modal {
@@ -373,6 +477,24 @@ body {
   line-height: 41px;
 }
 
+.forms {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 35px;
+}
+
+.fieldset {
+  border: none;
+}
+
+.first-row-forms {
+  display: flex;
+}
+
+.second-row-forms {
+  display: flex;
+}
+
 .sort-form legend {
   font-size: 14px;
   line-height: 16px;
@@ -385,6 +507,10 @@ body {
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
+}
+
+.pagination {
+  margin-bottom: 35px;
 }
 
 .pagination-list {
