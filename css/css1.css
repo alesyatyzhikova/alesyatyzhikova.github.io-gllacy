@@ -1,0 +1,188 @@
+body {
+  min-width: 1150px;
+  min-height: 3500px;
+}
+
+body {
+  background-image: url(../img/index-1200.jpg);
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-color: #849d8f;
+  background-size: 1200px auto;
+
+}
+
+.container {
+  width: 1150px;
+  padding: 0 25px;
+  margin: 0 auto;
+
+  border: 2px solid red;
+}
+
+.main-header {
+  border: 2px solid blue;
+}
+
+.main-navigation {
+  border: 2px solid green;
+  min-height:;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.main-logo,
+.menu-navigation-list,
+.user-navigation-list,
+.navigation-time {
+  display: block;
+  border: 2px solid black;
+}
+
+.main-logo {
+  width: 154px;
+  height: 64px;
+}
+
+.menu-navigation-list {
+  width: 600px;
+  height: 25px;
+}
+
+.right-navigation {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-navigation-list {
+  width: 270px;
+  height: 40px;
+}
+
+.navigation-time {
+  width: 164px;
+  min-height: 40px;
+  margin-left: auto;
+  margin-top: auto;
+}
+
+.index {
+  border: 2px solid red;
+}
+
+.main-slider {
+  min-height: 490px;
+  border: 2px solid blue;
+}
+
+.stocks {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid green;
+  margin-bottom: 35px;
+}
+
+.raspberries-stock {
+  width: 560px;
+  padding: 25px 20px;
+  box-sizing: border-box;
+  min-height: 228px;
+  border: 2px solid yellow;
+}
+
+.chocolate-stock {
+  width: 560px;
+  padding: 25px 20px;
+  box-sizing: border-box;
+  min-height: 228px;
+  border: 2px solid yellow;
+}
+
+.ice {
+  margin-bottom: 35px;
+  border: 2px solid black;
+}
+
+.ice-list {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid blue;
+  margin: 0;
+  padding: 0;
+}
+
+.ice-item {
+  width: 268px;
+  min-height: 325px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: 2px solid yellow;
+}
+
+.advantages {
+  min-height: 307px;
+  border: 2px solid green;
+  padding: 25px 20px;
+  box-sizing: border-box;
+  margin-bottom: 35px;
+}
+
+.subscription {
+  border: 2px solid red;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+
+.news {
+   width: 560px;
+  padding: 25px 20px;
+  box-sizing: border-box;
+  min-height: 228px;
+  border: 2px solid yellow;
+}
+
+.subscription-block {
+   width: 560px;
+  padding: 25px 20px;
+  box-sizing: border-box;
+  min-height: 228px;
+  border: 2px solid yellow;
+}
+
+.address {
+  width: 1200px;
+  min-height: 430px;
+  border: 2px solid blue;
+  margin-left: -25px;
+  margin-bottom: 35px;
+}
+
+.main-footer {
+  border: 2px solid green;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-list {
+  width: 267px;
+  min-height: 45px;
+  border: 2px solid blue;
+
+}
+
+.link-list {
+  width: 560px;
+  min-height: 45px;
+  border: 2px solid blue;
+
+}
+
+.made-in {
+  width: 267px;
+  min-height: 80px;
+  border: 2px solid blue;
+}

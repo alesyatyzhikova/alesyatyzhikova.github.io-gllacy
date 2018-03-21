@@ -6,7 +6,7 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="container">
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-logo" aria-label="Логотип">
@@ -87,7 +87,8 @@
       <section class="forms">
         <h2 class="visually-hidden">Формы для фильтров</h2>
         <form class="sort-form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset>
+        <div class="first-row-forms">
+          <fieldset class="fieldset">
             <legend class="sort-legend">Сортировка:</legend>
             <select class="sort-form-select">
               <option class="option" value="По популярности" selected>По популярности</option>
@@ -96,11 +97,11 @@
               <option class="option" value="По жирности">По жирности</option>
             </select>
           </fieldset>
-          <fieldset>
+          <fieldset class="fieldset">
             <legend class="sort-legend">Цена: 100 руб. - 500 руб.</legend>
             <!-- Диапазон -->
           </fieldset>
-          <fieldset>
+          <fieldset class="fieldset">
             <legend class="sort-legend">Жирность:</legend>
             <ul class="radio-list">
               <li class="radio-item">
@@ -121,7 +122,9 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset>
+        </div>
+        <div class="second-row-forms">
+          <fieldset class="fieldset">
             <legend>Наполнители:</legend>
             <ul class="checkbox-list">
               <li class="checkbox-item">
@@ -147,6 +150,7 @@
             </ul>
           </fieldset>
           <button class="filter-button" type="submit">Применить</button>
+          </div>
         </form>
       </section>
       <section class="ice-catalog">
@@ -260,7 +264,7 @@
         </ul>
       </div>
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer container">
       <ul class="social-list">
         <li class="social-item"><a class="twitter" href="#" aria-label="Твиттер">Твитер</a></li>
         <li class="social-item"><a class="instagram" href="#" aria-label="Инстаграм">Инстаграм</a></li>
@@ -273,7 +277,7 @@
         <li class="link-item"><a href="#">Наши документы</a></li>
         <li class="link-item"><a href="#">Экологические стандарты</a></li>
       </ul>
-      <p>Сделано в <a class="academy-link" href="#">HTML Academy</a> 2017</p>
+      <p class="made-in">Сделано в <a class="academy-link" href="#">HTML Academy</a> 2017</p>
     </footer>
   </body>
 </html>
