@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <title>Каталог</title>
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/css-min.css" rel="stylesheet">
   </head>
-  <body class=" catalog-body container">
+  <body class="catalog-body container">
     <header class="main-header">
       <nav class="main-navigation">
-        <a href="#" class="main-logo" aria-label="Логотип">
+        <a href="catalog.html" class="main-logo" aria-label="Логотип">
         <img src="img/logo.svg" width="154" height="64" alt="Логотип">
         </a>
         <ul class="menu-navigation-list">
@@ -50,10 +50,10 @@
                 </p>
                 <div class="user-confirm">
                   <a class="button" href="#">Войти</a>
-                  <p>
-                    <a class="enter-link" href="#">Забыли пароль?</a><br>
+                  <div class="enter-link-block">
+                    <a class="enter-link" href="#">Забыли пароль?</a>
                     <a class="enter-link" href="#">Новая регистрация</a>
-                  </p>
+                  </div>
                 </div>
               </form>
             </div>
@@ -80,12 +80,14 @@
         </ul>
         <div class="working-info">
           <ul class="breadcrumbs-list">
-            <li class="breadcrumbs-item"><a href="#">Главная</a></li>
+            <li class="breadcrumbs-item"><a href="index.html">Главная</a></li>
             <li class="breadcrumbs-item"><a href="#">Каталог</a></li>
             <li class="breadcrumbs-item"><a>Сливочное</a></li>
           </ul>
-          <p class="navigation-time">с 10 до 20, ежедневно<br><span class="navigation-phone">8 812 450-25-25</span>
-          </p>
+          <div class="work-info-block">
+            <p class="navigation-time">с 10 до 20, ежедневно</p>
+            <p class="navigation-phone">8 812 450-25-25</p>
+          </div>
         </div>
       </nav>
     </header>
@@ -164,158 +166,152 @@
       </section>
       <section class="ice-catalog">
         <h2 class="visually-hidden">Каталог мороженого</h2>
-        <div class="ice-list">
-          <div class="ice-row-1">
-            <div class="ice-item">
-              <a class="ice-image" href="#">
-              <img src="img/hit1.png" width="267" height="267" alt="Мороженое">
-              </a>
-              <div class="ice-text">
-                <p class="ice-price">310 ₽<span>/кг</span></p>
-                <a class="ice-link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-              </div>
-              <div class="ice-hover">
-                <a class="button ice-hover-button" href="#">Быстрый просмотр</a>
-              </div>
+        <ul class="ice-list">
+          <li class="ice-item">
+            <a class="ice-image" href="#">
+            <img src="img/hit1.png" width="267" height="267" alt="Мороженое">
+            </a>
+            <div class="ice-text">
+              <p class="ice-price">310 ₽<span>/кг</span></p>
+              <a class="ice-link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
             </div>
-            <div class="ice-item">
-              <a class="ice-image" href="#">
-              <img src="img/hit2.png" width="267" height="267" alt="Мороженое">
-              </a>
-              <div class="ice-text">
-                <p class="ice-price">380 ₽<span>/кг</span></p>
-                <a class="ice-link" href="#">Сливочно-кофейное с кусочками шоколада</a>
-              </div>
-              <div class="ice-hover">
-                <a class="button ice-hover-button" href="#">Быстрый просмотр</a>
-              </div>
+            <div class="ice-hover">
+              <a class="button ice-hover-button" href="#">Быстрый просмотр</a>
             </div>
-            <div class="ice-item">
-              <a class="ice-image" href="#">
-              <img src="img/hit3.png" width="267" height="267" alt="Мороженое">
-              </a>
-              <div class="ice-text">
-                <p class="ice-price">355 ₽<span>/кг</span></p>
-                <a class="ice-link" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
-              </div>
-              <div class="ice-hover">
-                <a class="button ice-hover-button" href="#">Быстрый просмотр</a>
-              </div>
+          </li>
+          <li class="ice-item">
+            <a class="ice-image" href="#">
+            <img src="img/hit2.png" width="267" height="267" alt="Мороженое">
+            </a>
+            <div class="ice-text">
+              <p class="ice-price">380 ₽<span>/кг</span></p>
+              <a class="ice-link" href="#">Сливочно-кофейное с кусочками шоколада</a>
             </div>
-            <div class="ice-item">
-              <a class="ice-image" href="#">
-              <img src="img/hit4.png" width="267" height="267" alt="Мороженое">
-              </a>
-              <div class="ice-text">
-                <p class="ice-price">415 ₽<span>/кг</span></p>
-                <a class="ice-link" href="#">Сливочное крем-брюле с карамельной подливкой</a>
-              </div>
-              <div class="ice-hover">
-                <a class="button ice-hover-button" href="#">Быстрый просмотр</a>
-              </div>
+            <div class="ice-hover">
+              <a class="button ice-hover-button" href="#">Быстрый просмотр</a>
             </div>
-          </div>
-          <div class="ice-row-2">
-            <div class="ice-item">
-              <a class="ice-image" href="#">
-              <img src="img/1_2.png" width="267" height="267" alt="Мороженое">
-              </a>
-              <div class="ice-text">
-                <p class="ice-price">325 ₽<span>/кг</span></p>
-                <a class="ice-link" href="#">Сливочное с брусничным джемом</a>
-              </div>
-              <div class="ice-hover">
-                <a class="button ice-hover-button" href="#">Быстрый просмотр</a>
-              </div>
+          </li>
+          <li class="ice-item">
+            <a class="ice-image" href="#">
+            <img src="img/hit3.png" width="267" height="267" alt="Мороженое">
+            </a>
+            <div class="ice-text">
+              <p class="ice-price">355 ₽<span>/кг</span></p>
+              <a class="ice-link" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
             </div>
-            <div class="ice-item">
-              <a class="ice-image" href="#">
-              <img src="img/2_2.png" width="267" height="267" alt="Мороженое">
-              </a>
-              <div class="ice-text">
-                <p class="ice-price">410 ₽<span>/кг</span></p>
-                <a class="ice-link" href="#">Сливочно-черничное с цельными ягодами черники</a>
-              </div>
-              <div class="ice-hover">
-                <a class="button ice-hover-button" href="#">Быстрый просмотр</a>
-              </div>
+            <div class="ice-hover">
+              <a class="button ice-hover-button" href="#">Быстрый просмотр</a>
             </div>
-            <div class="ice-item">
-              <a class="ice-image" href="#">
-              <img src="img/3_2.png" width="267" height="267" alt="Мороженое">
-              </a>
-              <div class="ice-text">
-                <p class="ice-price">375 ₽<span>/кг</span></p>
-                <a class="ice-link" href="#">Сливочно-лимонное  карамельной присыпкой</a>
-              </div>
-              <div class="ice-hover">
-                <a class="button ice-hover-button" href="#">Быстрый просмотр</a>
-              </div>
+          </li>
+          <li class="ice-item">
+            <a class="ice-image" href="#">
+            <img src="img/hit4.png" width="267" height="267" alt="Мороженое">
+            </a>
+            <div class="ice-text">
+              <p class="ice-price">415 ₽<span>/кг</span></p>
+              <a class="ice-link" href="#">Сливочное крем-брюле с карамельной подливкой</a>
             </div>
-            <div class="ice-item">
-              <a class="ice-image" href="#">
-              <img src="img/4_2.png" width="267" height="267" alt="Мороженое">
-              </a>
-              <div class="ice-text">
-                <p class="ice-price">320 ₽<span>/кг</span></p>
-                <a class="ice-link" href="#">Сливочное с шоколадной стружкой</a>
-              </div>
-              <div class="ice-hover">
-                <a class="button ice-hover-button" href="#">Быстрый просмотр</a>
-              </div>
+            <div class="ice-hover">
+              <a class="button ice-hover-button" href="#">Быстрый просмотр</a>
             </div>
-          </div>
-          <div class="ice-row-3">
-            <div class="ice-item">
-              <a class="ice-image" href="#">
-              <img src="img/1_3.png" width="267" height="267" alt="Мороженое">
-              </a>
-              <div class="ice-text">
-                <p class="ice-price">440 ₽<span>/кг</span></p>
-                <a class="ice-link" href="#">Сливочно-ванильное с кусочками шоколада</a>
-              </div>
-              <div class="ice-hover">
-                <a class="button ice-hover-button" href="#">Быстрый просмотр</a>
-              </div>
+          </li>
+          <li class="ice-item">
+            <a class="ice-image" href="#">
+            <img src="img/1_2.png" width="267" height="267" alt="Мороженое">
+            </a>
+            <div class="ice-text">
+              <p class="ice-price">325 ₽<span>/кг</span></p>
+              <a class="ice-link" href="#">Сливочное с брусничным джемом</a>
             </div>
-            <div class="ice-item">
-              <a class="ice-image" href="#">
-              <img src="img/2_3.png" width="267" height="267" alt="Мороженое">
-              </a>
-              <div class="ice-text">
-                <p class="ice-price">435 ₽<span>/кг</span></p>
-                <a class="ice-link" href="#">Сливочное с ментоловым сиропом</a>
-              </div>
-              <div class="ice-hover">
-                <a class="button ice-hover-button" href="#">Быстрый просмотр</a>
-              </div>
+            <div class="ice-hover">
+              <a class="button ice-hover-button" href="#">Быстрый просмотр</a>
             </div>
-            <div class="ice-item">
-              <a class="ice-image" href="#">
-              <img src="img/3_3.png" width="267" height="267" alt="Мороженое">
-              </a>
-              <div class="ice-text">
-                <p class="ice-price">355 ₽<span>/кг</span></p>
-                <a class="ice-link" href="#">Сливочное с кусочками черного шоколада</a>
-              </div>
-              <div class="ice-hover">
-                <a class="button ice-hover-button" href="#">Быстрый просмотр</a>
-              </div>
+          </li>
+          <li class="ice-item">
+            <a class="ice-image" href="#">
+            <img src="img/2_2.png" width="267" height="267" alt="Мороженое">
+            </a>
+            <div class="ice-text">
+              <p class="ice-price">410 ₽<span>/кг</span></p>
+              <a class="ice-link" href="#">Сливочно-черничное с цельными ягодами черники</a>
             </div>
-            <div class="ice-item">
-              <a class="ice-image" href="#">
-              <img src="img/4_3.png" width="267" height="267" alt="Мороженое">
-              </a>
-              <div class="ice-text">
-                <p class="ice-price">420 ₽<span>/кг</span></p>
-                <a class="ice-link" href="#">Сливочное с мятным сиропом</a>
-              </div>
-              <div class="ice-hover">
-                <a class="button ice-hover-button" href="#">Быстрый просмотр</a>
-              </div>
+            <div class="ice-hover">
+              <a class="button ice-hover-button" href="#">Быстрый просмотр</a>
             </div>
-          </div>
-        </div>
+          </li>
+          <li class="ice-item">
+            <a class="ice-image" href="#">
+            <img src="img/3_2.png" width="267" height="267" alt="Мороженое">
+            </a>
+            <div class="ice-text">
+              <p class="ice-price">375 ₽<span>/кг</span></p>
+              <a class="ice-link" href="#">Сливочно-лимонное  карамельной присыпкой</a>
+            </div>
+            <div class="ice-hover">
+              <a class="button ice-hover-button" href="#">Быстрый просмотр</a>
+            </div>
+          </li>
+          <li class="ice-item">
+            <a class="ice-image" href="#">
+            <img src="img/4_2.png" width="267" height="267" alt="Мороженое">
+            </a>
+            <div class="ice-text">
+              <p class="ice-price">320 ₽<span>/кг</span></p>
+              <a class="ice-link" href="#">Сливочное с шоколадной стружкой</a>
+            </div>
+            <div class="ice-hover">
+              <a class="button ice-hover-button" href="#">Быстрый просмотр</a>
+            </div>
+          </li>
+          <li class="ice-item">
+            <a class="ice-image" href="#">
+            <img src="img/1_3.png" width="267" height="267" alt="Мороженое">
+            </a>
+            <div class="ice-text">
+              <p class="ice-price">440 ₽<span>/кг</span></p>
+              <a class="ice-link" href="#">Сливочно-ванильное с кусочками шоколада</a>
+            </div>
+            <div class="ice-hover">
+              <a class="button ice-hover-button" href="#">Быстрый просмотр</a>
+            </div>
+          </li>
+          <li class="ice-item">
+            <a class="ice-image" href="#">
+            <img src="img/2_3.png" width="267" height="267" alt="Мороженое">
+            </a>
+            <div class="ice-text">
+              <p class="ice-price">435 ₽<span>/кг</span></p>
+              <a class="ice-link" href="#">Сливочное с ментоловым сиропом</a>
+            </div>
+            <div class="ice-hover">
+              <a class="button ice-hover-button" href="#">Быстрый просмотр</a>
+            </div>
+          </li>
+          <li class="ice-item">
+            <a class="ice-image" href="#">
+            <img src="img/3_3.png" width="267" height="267" alt="Мороженое">
+            </a>
+            <div class="ice-text">
+              <p class="ice-price">355 ₽<span>/кг</span></p>
+              <a class="ice-link" href="#">Сливочное с кусочками черного шоколада</a>
+            </div>
+            <div class="ice-hover">
+              <a class="button ice-hover-button" href="#">Быстрый просмотр</a>
+            </div>
+          </li>
+          <li class="ice-item">
+            <a class="ice-image" href="#">
+            <img src="img/4_3.png" width="267" height="267" alt="Мороженое">
+            </a>
+            <div class="ice-text">
+              <p class="ice-price">420 ₽<span>/кг</span></p>
+              <a class="ice-link" href="#">Сливочное с мятным сиропом</a>
+            </div>
+            <div class="ice-hover">
+              <a class="button ice-hover-button" href="#">Быстрый просмотр</a>
+            </div>
+          </li>
+        </ul>
       </section>
       <div class="pagination">
         <ul class="pagination-list">
